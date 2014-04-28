@@ -1,0 +1,60 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: MaudeSyntax
+scopeName: source.maude
+fileTypes: ["maude"]
+uuid: d9f1b179-4829-45ea-9bb7-b20c447fc9ef
+
+
+
+patterns:
+- include: "#everything"
+
+- name: module
+  begin: "(fmod) (.+) (is)"
+  beginCaptures:
+    "1": { name: keyword }
+    "2": { name: string }
+    "3": { name: keyword }
+  end: "(endfm)"
+  endCaptures:
+    "1": { name: keyword }
+  patterns:
+    - include: "#everything"
+
+
+repository:
+  everything:
+    patterns:
+    - match: \*\*\*.*
+      name: comment
+
+    - match: "(pr|protecting) (.+) \\."
+      comment: Inclusion of an fmod
+      captures:
+        "1": { name: keyword }
+        "2": { name: string }
+
+
+    - match: (ops|op|vars|var|sorts|sort|subsorts|subsort|set|trace)
+      name: keyword
+
+    - match: (on|off)
+      name: constant.language
+      comment: This is horribly wrong, probably
+
+    - match: "[A-Z][a-z]+"
+      name: support.type
+      comment: Matches sorts
+
+    - name: equation
+      match: "(eq|ceq) ([^=]+) = (.+) \\."
+      captures:
+        "1": { name: keyword }
+        "2": { name: markup.inserted }
+        "3": { name: markup.deleted }
+
+
+
+
+

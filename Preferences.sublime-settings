@@ -1,0 +1,39 @@
+{
+	"GotoOpenFile":
+	{
+		"sort_views": true
+	},
+	"color_scheme": "Packages/daylerees-colour-schemes/Earthsong.tmTheme",
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Source Code Pro",
+	"font_size": 14.0,
+	"gutter": true,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Theme - Phoenix",
+		"Rust",
+		"SideBarEnhancements",
+		"SublimeBlockCursor",
+		"WordCount",
+		"Switch View in Group",
+		"Theme - Aqua",
+		"SublimeREPL"
+	],
+	"phoenix_color_red": true,
+	"phoenix_highlight_current_tab": true,
+	"phoenix_solid_current_tab": true,
+	"remember_open_files": false,
+	"rulers":
+	[
+		80,
+		91
+	],
+	"search_threshold": 100000,
+	"soda_classic_tabs": true,
+	"theme": "Soda Dark 3.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"wrap_width": 91
+}

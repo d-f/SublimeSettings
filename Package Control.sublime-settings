@@ -1,0 +1,20 @@
+{
+	"installed_packages":
+	[
+		"AAAPackageDev",
+		"Better CoffeeScript",
+		"BracketHighlighter",
+		"DocBlockr",
+		"eco",
+		"Emmet",
+		"FASM x86",
+		"LESS",
+		"nginx",
+		"SCSS",
+		"SideBarEnhancements",
+		"Tag",
+		"Theme - Phoenix",
+		"Theme - Soda",
+		"TOML"
+	]
+}

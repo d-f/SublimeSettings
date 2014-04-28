@@ -1,0 +1,5 @@
+[
+    { "keys": ["super+shift+e"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+    { "keys": ["super+e"], "command": "goto_open_file", "args": {"active_group": true} },
+    { "keys": ["super+shift+w"], "command": "wrap_function" },
+]
